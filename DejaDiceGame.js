@@ -26,7 +26,7 @@ function gameStart() {
 				console.log(correctLetter[i]);
 			}
 			console.log(rollCounter);
-			alert("It took you " + rollCounter + " rolls to spell out Breadstick. Today is not your lucky day.");
+			alert("It took you " + rollCounter + " rolls to spell out Breadstick. \r\n Today is not your lucky day, Please roll again.");
 			}
 
 			function rollDie(n) {
