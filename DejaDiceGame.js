@@ -5,11 +5,11 @@ function gameStart() {      //////////// creates the function that runs the game
 				var firstCharacter = inputName.slice(0,1);			//gets first letter by itself to captalize
 				var upperCasefirstCharacter = firstCharacter.toUpperCase(); //captalize first letter
 				var restOfName = inputName.slice(1,inputName.length); 		//the rest of the user name
-					alert("Welcome " + upperCasefirstCharacter + restOfName + " to my dice game! \r\n Are you feeling lucky? \r\n If it takes for you less than 30 rolls to spell out  \r\n Acorns you win!"); //then this will alert my message \r\n creates a line break in the alert
+					alert("Welcome " + upperCasefirstCharacter + restOfName + " to my dice game! \r\n Are you feeling lucky? \r\n If it takes for you less than 40 rolls to spell out  \r\n Acorns you win!"); //then this will alert my message \r\n creates a line break in the alert
 			}
 				gameStart(); //runs this function, the name/welcome prompt part
 
-function thing() {
+function runGame() {
 				var correctRoll = [4, 6, 8, 10, 12, 20]; //array for the dice even numbers that I want to relate to the letters
 				var correctLetter = ["A", "C", "O", "R", "N", "S"]; //array for the letters that I want to relate to the numbers
 				var diceOrder = [4, 6, 8, 10, 12, 20]; //how many times the dice need to roll the 4 dice needs to roll twice and the 20 needs to roll 4 times
@@ -25,10 +25,17 @@ function thing() {
 				}
 				console.log(rollCounter);
 			
-					if (rollCounter < 50) {
+					if (rollCounter < 40) {
 						alert("It took you " + rollCounter + " rolls to spell out Acorns. \r\n Today is your lucky day!");
 					} else {
 						alert("It took you " + rollCounter + " rolls to spell out Acorns. \r\n Today is not you're lucky day, please try again!")
+					}
+
+					if(confirm("Would you like to play again?")){
+						return runGame();
+					}
+					else{
+						alert("Thanks for playing!");
 					}
 				}		
 
@@ -37,15 +44,11 @@ function rollDie(n) {
 			return result;
 			}
 
-			thing();
+			runGame();
 			
 			
 
-			/*let colors = 'green';
-			for(let index = 0; index > colors.length; index++) { //creates loop will check for the color length 
-				if (colors[index] === 'Blue') { //
-				}
-				else {*/
+
 
 
 
