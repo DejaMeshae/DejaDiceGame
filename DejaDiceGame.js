@@ -5,7 +5,7 @@ function gameStart() {
 				var firstCharacter = inputName.slice(0,1);										//gets first letter by itself to captalize
 				var upperCasefirstCharacter = firstCharacter.toUpperCase(); 					//captalize first letter
 				var restOfName = inputName.slice(1,inputName.length); 							//the rest of the user name
-					alert("Welcome, " + upperCasefirstCharacter + restOfName + " to my dice game! \r\n How many rolls does it takes for you to spell out  \r\n Breadstick?"); //then this will alert my message \r\n creates a line break in the alert
+					alert("Welcome, " + upperCasefirstCharacter + restOfName + " to my dice game! \r\n Are you feeling lucky? \r\n If it takes for you less than 60 rolls to spell out  \r\n Breadstick you win!"); //then this will alert my message \r\n creates a line break in the alert
 			}
 				gameStart(); //runs the name/welcome prompt part
 
@@ -26,7 +26,7 @@ function gameStart() {
 				console.log(correctLetter[i]);
 			}
 			console.log(rollCounter);
-			alert("It took you " + rollCounter + " rolls to spell out Breadstick");
+			alert("It took you " + rollCounter + " rolls to spell out Breadstick. Today is not your lucky day.");
 			}
 
 			function rollDie(n) {
