@@ -31,20 +31,21 @@ function runGame() {
 						alert("It took you " + rollCounter + " rolls to spell out Acorns. \r\n Today is not you're lucky day, please try again!")
 					}
 
-					if(confirm("Would you like to play again?")){
+					if(confirm("Would you like to try your luck?")){
 						return runGame();
 					}
 					else{
 						alert("Thanks for playing!");
 					}
-				}		
+					}		
 
 function rollDie(n) {
 			var result = Math.ceil(Math.random() * n);
+			console.log(result);
 			return result;
-			}
+					}
 
-			runGame();
+					runGame();
 			
 			
 
