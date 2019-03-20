@@ -1,13 +1,13 @@
 //Deja's DICE GAME
 
-function gameStart() {      //////////// creates the function that runs the game
+/*function gameStart() {      //////////// creates the function that runs the game
 				var inputName = prompt("What is your name?");       //prompt for name
 				var firstCharacter = inputName.slice(0,1);			//gets first letter by itself to captalize
 				var upperCasefirstCharacter = firstCharacter.toUpperCase(); //captalize first letter
 				var restOfName = inputName.slice(1,inputName.length); 		//the rest of the user name
 					alert("Welcome " + upperCasefirstCharacter + restOfName + " to my dice game! \r\n Are you feeling lucky? \r\n If it takes for you less than 40 rolls to spell out  \r\n Acorns you win!"); //then this will alert my message \r\n creates a line break in the alert
 			}
-				gameStart(); //runs this function, the name/welcome prompt part
+				/*gameStart();*/ //runs this function, the name/welcome prompt part
 
 function runGame() {
 				var correctRoll = [4, 6, 8, 10, 12, 20]; //array for the dice even numbers that I want to relate to the letters
@@ -41,7 +41,6 @@ function runGame() {
 
 function rollDie(n) {
 			var result = Math.ceil(Math.random() * n);
-			console.log(result);
 			return result;
 					}
 
