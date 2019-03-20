@@ -15,23 +15,9 @@ h1{
     font-size: 70px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-img {
-  width: 80%;
+p{
+	color: rgb(11, 98, 170);
+	text-align: center;
+    text-shadow: 2px 2px 6px black;
+    font-size: 50px;
 }
