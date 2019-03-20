@@ -1,18 +1,18 @@
 //Deja's DICE GAME
 
-/*function gameStart() {      //////////// creates the function that runs the game
+function gameStart() {      //////////// creates the function that runs the game
 				var inputName = prompt("What is your name?");       //prompt for name
 				var firstCharacter = inputName.slice(0,1);			//gets first letter by itself to captalize
 				var upperCasefirstCharacter = firstCharacter.toUpperCase(); //captalize first letter
 				var restOfName = inputName.slice(1,inputName.length); 		//the rest of the user name
-					alert("Welcome, " + upperCasefirstCharacter + restOfName + " to my dice game! \r\n Are you feeling lucky? \r\n If it takes for you less than 60 rolls to spell out  \r\n Breadstick you win!"); //then this will alert my message \r\n creates a line break in the alert
+					alert("Welcome " + upperCasefirstCharacter + restOfName + " to my dice game! \r\n Are you feeling lucky? \r\n If it takes for you less than 30 rolls to spell out  \r\n Acorns you win!"); //then this will alert my message \r\n creates a line break in the alert
 			}
-				gameStart();*/ //runs this function, the name/welcome prompt part
+				gameStart(); //runs this function, the name/welcome prompt part
 
 function thing() {
-				var correctRoll = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]; //array for the dice even numbers that I want to relate to the letters
-				var correctLetter = ["b", "r", "e", "a", "d", "s", "t", "i", "c", "k"]; //array for the letters that I want to relate to the numbers
-				var diceOrder = [4, 4, 6, 8, 10, 12, 20, 20, 20, 20]; //how many times the dice need to roll the 4 dice needs to roll twice and the 20 needs to roll 4 times
+				var correctRoll = [4, 6, 8, 10, 12, 20]; //array for the dice even numbers that I want to relate to the letters
+				var correctLetter = ["A", "C", "O", "R", "N", "S"]; //array for the letters that I want to relate to the numbers
+				var diceOrder = [4, 6, 8, 10, 12, 20]; //how many times the dice need to roll the 4 dice needs to roll twice and the 20 needs to roll 4 times
 				var rollCounter = 1; // starts the counter at 1
 				
 				for (let i = 0; i < correctRoll.length; i++) { /// starting at 0 then as long as trhat value is greater than correctroll it will countine to loop
@@ -24,17 +24,28 @@ function thing() {
 					console.log(correctLetter[i]);
 				}
 				console.log(rollCounter);
-				alert("It took you " + rollCounter + " rolls to spell out Breadstick. \r\n Today is not your lucky day, Please roll again.");
-				}
+			
+					if (rollCounter < 50) {
+						alert("It took you " + rollCounter + " rolls to spell out Acorns. \r\n Today is your lucky day!");
+					} else {
+						alert("It took you " + rollCounter + " rolls to spell out Acorns. \r\n Today is not you're lucky day, please try again!")
+					}
+				}		
 
-			function rollDie(n) {
+function rollDie(n) {
 			var result = Math.ceil(Math.random() * n);
 			return result;
 			}
 
 			thing();
+			
+			
 
-
+			/*let colors = 'green';
+			for(let index = 0; index > colors.length; index++) { //creates loop will check for the color length 
+				if (colors[index] === 'Blue') { //
+				}
+				else {*/
 
 
 
